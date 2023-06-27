@@ -5,6 +5,7 @@ const cursorElement = document.querySelector('.cursor');
 
 function processCommand(command) {
   if (command === 'sabores') {
+    outputElement.innerHTML = '';
     outputElement.innerHTML += 'Tropical<br>Picante<br>';
   } else if (command === 'borrar') {
     outputElement.innerHTML = '';
