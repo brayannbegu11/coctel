@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('fondo.avif'); /* Fondo de frambuesa */
+  }
+  
+  .window {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgba(255, 107, 107, 0.8); /* Opacidad para resaltar las letras */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra para simular una ventana */
+  }
+  
+  .title-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+  }
+  
+  .title {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .available-commands {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .terminal {
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    color: #fff;
+    height: 400px; /* Altura inicial de la terminal */
+    overflow-y: auto; /* Habilita el desplazamiento vertical si hay demasiado contenido */
+  }
+  
+  .prompt {
+    color: #0f0;
+    margin-bottom: 5px;
+  }
+  
+  .output {
+    color: #fff;
+  }
+
+  .cursor {
+    display: inline-block;
+    width: 5px;
+    height: 18px;
+    background-color: #0f0;
+    animation: blink 1s infinite;
+  }
+  
+  .input {
+    background-color: transparent;
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: monospace;
+    font-size: 16px;
+    color: #fff;
+    height: 20px;
+  }
+  
+  /* Resto de los estilos */
+  
